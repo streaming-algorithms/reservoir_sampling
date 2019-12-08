@@ -12,7 +12,7 @@ class ReservoirSampling:
         if len(self.sample) < self.sample_size:
             self.sample.append(item)
         else:
-            odds = randint(low=0, high=self.iteration)
+            odds = randint(0, self.iteration)
             if odds < self.sample_size:
                 self.sample[odds] = item
 
